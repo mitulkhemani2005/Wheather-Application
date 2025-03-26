@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./Image/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#head{
+    font-size: 7.2rem;
+    text-align: center;
+}
+.one{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.one input{
+    width: 80%;
+    padding: 5px;
+    font-size: 2rem;
+    text-align: center;
+}
+::placeholder {
+    text-align: center;
+    font-weight: 400; 
+    font-size: 1rem;
+} 
+.one button{
+    width: 10%;
+    font-weight: 600;
+    font-size: larger;
+}
+.tail{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tail h1{
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    border-radius: 5px;
+    padding: 15px;
+}
+h6{
+    position: absolute;
+    bottom: 5%;
+    font-size: medium;
+}
+#cl{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #head {
+        font-size: 4rem;
+    }
+
+    .one {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .one input {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .one button {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .tail {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .tail h1 {
+        font-size: 1.5rem;
+        width: 100%;
+        margin: 10px 0;
+    }
+    h6{
+        bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #head {
+        font-size: 3rem;
+    }
+
+    .one input {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .one button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .tail h1 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    h6 {
+        font-size: small;
+        bottom: 0;
+    }
+}
